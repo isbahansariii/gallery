@@ -4,9 +4,7 @@ body {
 }
 .mainText {
   font-size: 3rem;
-  display: inline;
   text-align: center;
-  margin: 0 0 0 37rem;
   transition: all ease 0.3s;
 }
 .mainText:hover{
@@ -15,7 +13,7 @@ body {
   cursor: pointer;
 }
 .img{
-    margin-top: 25px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     height: 15rem;
@@ -27,6 +25,7 @@ body {
     border-radius: 10px;
     border: 2px solid white;
     transition: all ease-in-out 0.3s;
+    margin-top: 10px;
 }
 .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img5:hover{
     width: 100%;
@@ -53,4 +52,34 @@ body {
 .img5{
     background-image: url("./image/img5.jpg");
     background-size: cover;
+}
+
+@media (min-width: 1000px){
+    .img{
+        flex-wrap: wrap;
+    }
+    .img1, .img2, .img3, .img4, .img5{
+        width: 5%;
+    }
+    .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img5:hover{
+        width: 20%;
+    }
+}
+
+@media (max-width: 1000px){
+    .img{
+        flex-wrap: wrap;
+    }
+    .img1, .img2, .img3, .img4, .img5{
+        width: 10%;
+    }
+    .img1:hover, .img2:hover, .img3:hover, .img4:hover, .img5:hover, .img5:hover{
+        width: 40%;
+    }
+}
+
+@media (min-width: 500px){
+    .img1, .img2, .img3, .img4, .img5{
+        width: 5%;
+    }
 }
